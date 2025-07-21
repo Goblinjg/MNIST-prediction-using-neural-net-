@@ -92,7 +92,7 @@ def gradient_descent(X, Y, alpha, iterations): #função principal de treinament
             print(get_accuracy(predictions, Y))
     return W1, b1, W2, b2
 
-W1, b1, W2, b2 = gradient_descent(X_train, Y_train, 0.10, 500) 
+W1, b1, W2, b2 = gradient_descent(X_train, Y_train, 0.10, 2000) 
 
 def make_predictions(X, W1, b1, W2, b2): #função para fazer previsões com os parâmetros treinados
     _, _, _, A2 = forward_prop(W1, b1, W2, b2, X)
